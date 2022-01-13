@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Mission2</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-16x16.png">
+    <link href="css/myStyles.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+<body class="ml-2 mt-1">
+    <h1>Heber Robertson</h1>
+    <div class="ml-5 mb-5 mt-2">
+        
+        <img src="/img/IMG_20201003_172958573.jpg" style="max-width:250px;width:100%" />
+        <h2>What I wish to gain from IS 413:</h2>
+        <p>
+            I hope to get more practice with a strongly typed language and web development.
+        </p>
+        <h2>Jobs I'm interested in:</h2>
+        <ul>
+            <li>Software Engineering</li>
+            <li>Web Developer</li>
+            <li>Data Analyst</li>
+        </ul>
+        <div id="gradeCalculator" class="form-group">
+            <h2>Grade Calculator</h2>
+            <h7>Input the score for each of the following categories</h7>
+            <form>
+                <label>Assignments Score</label>
+                <input id="assignmentsScore" type="number" min="0" placeholder="0"/><br />
+                <label>Group Project Score</label>
+                <input id="groupProjectScore" type="number" min="0" placeholder="0"/><br />
+                <label>Quizzes Score</label>
+                <input id="quizzesScore" type="number" min="0" placeholder="0"/><br />
+                <label>Exams Score</label>
+                <input id="examsScore" type="number" min="0" placeholder="0"/><br />
+                <label>Intex Score</label>
+                <input id="intexScore" type="number" min="0" placeholder="0"/><br />
+                <input id="calculate" type="button" class="btn-success" value="Calculate Grade" />
+                <input id="reset" type="button" class="btn-danger" value="Reset" />
+            </form>
+        </div>
+
+        <div>
+            <h3>Letter Grade: </h3><h3 id="LetterGrade"></h3>
+     
+        </div>
+
+        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <script src="js/myFunctions.js"></script>
+    </div>
+    
+
+</body>
+</html>
