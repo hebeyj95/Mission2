@@ -6,4 +6,7 @@ h3 {
     color: midnightblue !important;
     display: inline !important;
 }
-
+p{
+    width: 500px !important;
+    display: block !important;
+}
