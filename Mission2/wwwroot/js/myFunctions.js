@@ -3,15 +3,25 @@
 
 // Write your Javascript code.
 
-$("#calculate").click(function (){
+// Calculate function:
 
+$("#calculate").click(function () {
+
+    // - reads in values from the DOM
+    // - multiplies the values by the correct weights
+    // - Assigns values to variables
+    
     iAScore = $("#assignmentsScore").val() * .55; // 55%
     iGScore = $("#groupProjectScore").val() * .05; // 5%
     iQScore = $("#quizzesScore").val() * .1; // 10%
     iEScore = $("#examsScore").val() * .2; // 20%
     iIScore = $("#intexScore").val() * .1; // 10%
 
+    // - Adds the variables
+
     iTotalScore = iAScore + iGScore + iQScore + iEScore + iIScore;
+
+    // - Use an if statment to determine correct letter grade
 
     if (iTotalScore >= 94) {
         sLetterGrade = "A";
@@ -53,6 +63,8 @@ $("#calculate").click(function (){
     $("#LetterGrade").html(sLetterGrade);
 
 })
+
+// Resets form values and letter grade on DOM
 
 $('#reset').click(function () {
     $("#assignmentsScore").val("");
